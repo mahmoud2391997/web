@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "CommonJS",
+    "skipLibCheck": true,
+    "outDir": "dist-electron",
+    "esModuleInterop": true,
+    "composite": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "isolatedModules": false, // Set to false to allow non-module files
+    "moduleDetection": "auto", // Set to auto to let TypeScript detect module format
+    "noEmit": false,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["vite.config.ts", "main.cjs", "src/services/localDbService.ts"],
+  "exclude": ["node_modules"]
+}

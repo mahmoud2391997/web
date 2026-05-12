@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Reset App Data</title></head>
+<body>
+<h1>Reset SAM'S PS Gaming Center Data</h1>
+<button onclick="resetData()">Reset All Data</button>
+<script>
+function resetData() {
+  localStorage.clear();
+  if (window.inMemoryDB) window.inMemoryDB = null;
+  alert('Data cleared! Refresh the main app.');
+}
+</script>
+</body>
+</html>
